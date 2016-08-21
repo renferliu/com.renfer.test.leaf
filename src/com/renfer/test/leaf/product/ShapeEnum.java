@@ -1,3 +1,18 @@
+/**
+ * FileName:     ShapeEnum.java 形状枚举类
+ * All rights Reserved, Designed By renferliu
+ * Copyright:    Copyright(C) 2016
+ * Company       
+ * @author:      renferliu
+ * @version      V1.0 
+ * Createdate:   2016-08-20
+ *
+ * Modification  History:
+ * Date          Author        Version        Discription
+ * -----------------------------------------------------------------------------------
+ * 
+ * Why & What is modified: 
+ */
 package com.renfer.test.leaf.product;
 
 /**

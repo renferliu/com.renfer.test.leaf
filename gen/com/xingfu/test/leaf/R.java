@@ -29,13 +29,6 @@ public final class R {
         public static final int container=0x7f070001;
         public static final int delOneLeaf=0x7f070003;
         public static final int leafNum=0x7f070000;
-        public static final int seebarB=0x7f070009;
-        public static final int seebarG=0x7f070007;
-        public static final int seebarR=0x7f070005;
-        public static final int seebar_tvB=0x7f07000a;
-        public static final int seebar_tvG=0x7f070008;
-        public static final int seebar_tvR=0x7f070006;
-        public static final int sure=0x7f070004;
     }
     public static final class layout {
         public static final int activity_main=0x7f030000;

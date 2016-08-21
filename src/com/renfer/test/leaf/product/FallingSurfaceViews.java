@@ -15,7 +15,6 @@ import android.util.AttributeSet;
 import android.view.Display;
 import android.view.SurfaceHolder;
 import android.view.SurfaceView;
-import android.view.View;
 import android.view.WindowManager;
 
 import com.renfer.test.leaf.factory.ShapeFactory;
@@ -132,6 +131,7 @@ public class FallingSurfaceViews extends SurfaceView implements
 		}
 	}
 
+	@SuppressWarnings("deprecation")
 	private static Point getDisplaySize(final Display display) {
 		final Point point = new Point();
 		try {
@@ -161,26 +161,12 @@ public class FallingSurfaceViews extends SurfaceView implements
 	/**
 	 * 启动动画重复执行
 	 */
+	@SuppressWarnings("unused")
 	private void playAnimation() {
 
 		animationHandler.postDelayed(animationRunnable, ANIMATION_DELY);
 	}
 
-	// @Override
-	// protected void onDraw(Canvas canvas) {
-	//
-	// super.onDraw(canvas);
-	// for (int i = 0; i < shapeProducts.length; i++) {
-	// path = shapeProducts[i].getPath();
-	// paintColor = shapeProducts[i].getColor();
-	//
-	// if (path != null) {
-	// paint.setColor(paintColor);
-	// canvas.drawPath(path, paint);
-	// }
-	// }
-	// playAnimation();
-	// }
 
 	@Override
 	public void run() {
@@ -221,7 +207,6 @@ public class FallingSurfaceViews extends SurfaceView implements
 	@Override
 	public void surfaceChanged(SurfaceHolder holder, int format, int width,
 			int height) {
-		// TODO Auto-generated method stub
 
 	}
 

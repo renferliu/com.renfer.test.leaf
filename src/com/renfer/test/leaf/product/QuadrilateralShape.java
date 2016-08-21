@@ -1,12 +1,31 @@
+/**
+ * FileName:     TriangleShape.java 
+ * All rights Reserved, Designed By renferliu
+ * Copyright:    Copyright(C) 2016
+ * Company       
+ * @author:      renferliu
+ * @version      V1.0 
+ * Createdate:   2016-08-20
+ *
+ * Modification  History:
+ * Date          Author        Version        Discription
+ * -----------------------------------------------------------------------------------
+ * 
+ * Why & What is modified: 
+ */
 package com.renfer.test.leaf.product;
 
 import android.graphics.Point;
 
+
 /**
  * 四边形
  * 
- * @author renferliu
+ * @author renferliu contact:renfer163@163.com
  * 
+ * @date 2016-08-17
+ * 
+ * @version 1.0
  */
 public class QuadrilateralShape extends AbstractShapeProduct {
 

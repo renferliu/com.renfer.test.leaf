@@ -1,3 +1,18 @@
+/**
+ * FileName:     TriangleShape.java 
+ * All rights Reserved, Designed By renferliu
+ * Copyright:    Copyright(C) 2016
+ * Company       
+ * @author:      renferliu
+ * @version      V1.0 
+ * Createdate:   2016-08-20
+ *
+ * Modification  History:
+ * Date          Author        Version        Discription
+ * -----------------------------------------------------------------------------------
+ * 
+ * Why & What is modified: 
+ */
 package com.renfer.test.leaf.product;
 
 import android.graphics.Point;
@@ -7,9 +22,12 @@ import android.graphics.Point;
  * 
  * @author renferliu contact:renfer163@163.com
  * 
+ * @date 2016-08-17
+ * 
+ * @version 1.0
  */
 public class TriangleShape extends AbstractShapeProduct {
-	
+
 	public TriangleShape(int parentWidth, int parentHeight) {
 		super(parentWidth, parentHeight);
 
@@ -18,16 +36,13 @@ public class TriangleShape extends AbstractShapeProduct {
 	@Override
 	public Point[] getShapePoints() {
 		Point point = getRandomPoint();
-		int step = 5+random.nextInt(20);
-		int nextStep = 1+random.nextInt(3);
+		int step = 5 + random.nextInt(20);
+		int nextStep = 1 + random.nextInt(3);
 		curPoints[0].set(point.x - step, point.y);
-		curPoints[1].set(point.x + step, point.y - step/nextStep);
-		curPoints[2].set(point.x,point.y - step);
+		curPoints[1].set(point.x + step, point.y - step / nextStep);
+		curPoints[2].set(point.x, point.y - step);
 		return curPoints;
 	}
-	
-	
-
 
 	@Override
 	public Point getStartWeightPoint() {
@@ -56,8 +71,6 @@ public class TriangleShape extends AbstractShapeProduct {
 		}
 		return curPoints;
 	}
-
-
 
 	@Override
 	public boolean isShapeRight(Point[] points) {
@@ -88,8 +101,6 @@ public class TriangleShape extends AbstractShapeProduct {
 		}
 	}
 
-
-
 	@Override
 	public void invalidatePoint() {
 		refreshCurPoints();
@@ -99,6 +110,5 @@ public class TriangleShape extends AbstractShapeProduct {
 	protected ShapeEnum getShape() {
 		return ShapeEnum.TRIANGLE;
 	}
-
 
 }

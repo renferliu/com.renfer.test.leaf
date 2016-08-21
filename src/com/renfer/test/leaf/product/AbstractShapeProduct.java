@@ -1,3 +1,18 @@
+/**
+ * FileName:     AbstractShapeProduct.java 形状产品父类
+ * All rights Reserved, Designed By renferliu
+ * Copyright:    Copyright(C) 2016
+ * Company       
+ * @author:      renferliu
+ * @version      V1.0 
+ * Createdate:   2016-08-20
+ *
+ * Modification  History:
+ * Date          Author        Version        Discription
+ * -----------------------------------------------------------------------------------
+ * 
+ * Why & What is modified: 
+ */
 package com.renfer.test.leaf.product;
 
 import java.util.Random;
@@ -10,11 +25,15 @@ import android.graphics.Point;
  * 形状产品父类
  * 
  * @author renferliu contact:renfer163@163.com
- * @version 2016-07-06
+ * 
+ * @date 2016-08-17
+ * 
+ * @version 1.0
  * 
  */
 public abstract class AbstractShapeProduct {
 
+	@SuppressWarnings("unused")
 	private static final String TAG = "AbstractShapeProduct";
 	private int color;
 	/**
@@ -191,7 +210,6 @@ public abstract class AbstractShapeProduct {
 	 * @return
 	 */
 	protected Point getRandomPoint() {
-		// int tmp = random.nextInt(2);
 		int x = parentWidth - random.nextInt(1 + parentWidth);
 		int y = -200 + random.nextInt(100);
 		tmpPoint.set(x, y);
@@ -325,9 +343,6 @@ public abstract class AbstractShapeProduct {
 
 		int disappearY = parentHeight / 2
 				+ random.nextInt(1 + parentHeight / 2);
-		// if(disappearY % 7 != 0){
-		// disappearY = disappearY + parentHeight /2;
-		// }
 		for (Point point : curPoints) {
 			if (point.y >= disappearY)
 				return true;
