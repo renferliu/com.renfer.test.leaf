@@ -1,0 +1,111 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.renfer.test.leaf.MainActivity" >
+
+    <TextView
+        android:id="@+id/leafNum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textColor="#ff0000" />
+
+    <LinearLayout
+        android:id="@+id/container"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@android:color/transparent"
+        android:orientation="horizontal" >
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/addOneLeaf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:gravity="center"
+        android:padding="10dp"
+        android:singleLine="true"
+        android:text="放彩"
+        android:textColor="@android:color/black" />
+
+    <Button
+        android:id="@+id/delOneLeaf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/addOneLeaf"
+        android:gravity="center"
+        android:padding="10dp"
+        android:singleLine="true"
+        android:text="擦除"
+        android:textColor="@android:color/black" />
+
+    <Button
+        android:id="@+id/sure"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/delOneLeaf"
+        android:gravity="center"
+        android:padding="10dp"
+        android:singleLine="true"
+        android:text="确定改变颜色"
+        android:textColor="@android:color/black" />
+
+    <SeekBar
+        android:id="@+id/seebarR"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/addOneLeaf"
+        android:max="255" />
+
+    <TextView
+        android:id="@+id/seebar_tvR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/seebarR"
+        android:text="R"
+        android:textColor="#ff0000" />
+
+    <SeekBar
+        android:id="@+id/seebarG"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/seebar_tvR"
+        android:max="255" />
+
+    <TextView
+        android:id="@+id/seebar_tvG"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/seebarG"
+        android:text="G"
+        android:textColor="#ff0000" />
+
+    <SeekBar
+        android:id="@+id/seebarB"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/seebarG"
+        android:max="255"
+        android:textColor="#ff0000" />
+
+    <TextView
+        android:id="@+id/seebar_tvB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/seebarB"
+        android:text="B"
+        android:textColor="#ff0000" />
+
+</RelativeLayout>
